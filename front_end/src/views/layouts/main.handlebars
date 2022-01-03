@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="{{head.charset}}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="description" content="{{head.desc}}">
+        <meta name="author" content="{{head.author}}">
+
+        {{!-- css files  --}}
+        {{#each styles}}
+            <link type="text/css" href="{{link}}"></link>
+        {{/each}}
+
+
+        {{!-- bootstrap css cdn  --}}
+        {{{bootstrap.css}}}
+
+        <title>{{head.title}}</title>
+    </head>
+
+    <body>
+
+        {{> nav}}
+
+        {{{body}}}
+
+        {{> footer}}
+
+        {{!-- javascript modules  --}}
+        {{#each modules}}
+            <script src="{{filename}}"></script>
+        {{/each}}
+
+        {{!-- javascript files  --}}
+        {{#each scripts}}
+            <script src="{{filename}}"></script>
+        {{/each}}
+
+        {{!-- bootstrap js cdn  --}}
+        {{{bootstrap.js}}}
+
+    </body>
+</html>
