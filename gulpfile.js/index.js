@@ -3,7 +3,7 @@ exports.compileScss = require('./tasks/compileScss');
 exports.compileTypescript = require('./tasks/compileTypescript');
 exports.finishMessage = require('./tasks/finishMessage');
 exports.reload = require('./tasks/reload');
-exports.serve = require('./tasks/serve');
+exports.processSetup = require('./tasks/processSetup');
 exports.startServer = require('./tasks/startServer');
 exports.startMessage = require('./tasks/startMessage');
 

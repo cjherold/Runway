@@ -4,7 +4,7 @@ const clearFolders = require('./clearFolders');
 const compileTypescript = require('./compileTypescript');
 const compileScss = require('./compileScss');
 const finishMessage = require('./finishMessage');
-// const serve = require('./serve');
+const processSetup = require('./processSetup');
 const startServer = require('./startServer');
 const reload = require('./reload');
 
@@ -23,7 +23,7 @@ module.exports = series(
         compileTypescript,
         compileScss,
     ),
-    // serve,
+    processSetup,
     startServer,
     reload,
     finishMessage,
