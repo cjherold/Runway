@@ -12,10 +12,10 @@ const FRONT_END = './front_end';
 function sassConvert(next) {
     console.log('Compiling Sass...\n');
 
-    src(`${FRONT_END}/src/scss/**`)
+    src(`${FRONT_END}/src/scss/**.scss`)
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(dest(`${FRONT_END}/public/css`))
+        .pipe(dest(`${FRONT_END}/public/css/`))
         
     src(`${FRONT_END}/src/scss/partials/*.scss`)
         .pipe(sass().on('error', sass.logError))
