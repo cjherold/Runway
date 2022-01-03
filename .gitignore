@@ -1,4 +1,10 @@
+front_end/public/css/*
+front_end/public/img/*
+front_end/public/js/*
+logs/*
 
+
+.env
 node_modules
 .vscode
 .vscode-test
