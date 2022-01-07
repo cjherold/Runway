@@ -6,8 +6,8 @@ class Errors {
         const now = new Date();
         console.error(`${now}\n\t${err}`);
         next();
-    }
-}
+    };
+};
 
 
 module.exports = Errors;

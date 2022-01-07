@@ -1,24 +1,30 @@
-// import 'parsleyjs';
-// import $ from 'jquery';
+
+// const formdata = $('#sample-form');
+
+const formdata = {
+    name: 'Chris'
+};
+
+$('#sample-form')
+    // .parsley()
+    .on('submit', function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            method: 'POST',
+            url: './form',
+            data: {
+                formdata,
+            },
+            success: function (response) {
+                console.log('response', response);
+            },
+            error: function (err) {
+                console.error('Error: ', err);
+            }
+        });
+
+        return false;
+    });
 
 
-// $('#sample-form')
-//     .parsley()
-//     .on('submit', function (e) {
-//         e.preventDefault();
-
-//         $.ajax({
-//             method: 'POST',
-//             url: './sampleform',
-//             data: {},
-//             success: () => {},
-//             error: err => console.log(err),
-//         });
-
-//         return false;
-//     });
-
-// const form = $('#sample-form');
-// console.log(form);
-
-console.log('sampleform.js loaded');

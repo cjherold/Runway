@@ -21,7 +21,7 @@ function head (req, res, next) {
         desc: 'This is an about page'
     };
 
-    head.sampleform = {
+    head.form = {
         charset: 'UTF-8',
         title: 'Sample Form',
         meta: 'metatag',

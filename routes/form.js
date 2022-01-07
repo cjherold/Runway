@@ -1,13 +1,14 @@
 
 const router = require('express').Router()
 const { Errors } = require('./classes');
+const { Misc } = require('./classes');
 
 
 router.route('/')
     .get(async (req, res, next) => {
         try {
             // from middleware/variables
-            const variables = res.locals.variables.sampleform;
+            const variables = res.locals.variables.form;
 
             res.render('form', {
                 layout: 'main',
@@ -21,11 +22,11 @@ router.route('/')
     })
     .post(async (req, res, next) => {
         try {
-            const formdata = req.body.formdata;
-    
+            const formSubmitted = await Misc.submitTestForm({ formdata: req.body.formdata });
+            
             res.json({
                 success: true,
-                message: 'Submit was successful',
+                message: 'Form sent successfully',
             });
         } catch (err) {
             Errors.saveError(err, next);

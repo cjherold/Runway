@@ -26,18 +26,6 @@
         bootstrap: res.locals.cdn.bootstrap,
     };
 
-    variables.docs = {
-        head: res.locals.head.docs,
-        bootstrap: res.locals.cdn.bootstrap,
-        styles: [
-            { link: '/css/_partials/nav.css' },
-            { link: '/css/docs.css' }
-        ],
-        scripts: [
-            { filename: '/js/docs.js' }
-        ]
-    };
-
     variables.form = {
         head: res.locals.head.form,
         bootstrap: res.locals.cdn.bootstrap,
@@ -46,6 +34,9 @@
             { link: '/css/_partials/nav.css' },
             { link: '/css/form.css' }
         ],
+        // modules: [
+        //     { filename: '/js/modlues/jquery.js' }
+        // ],
         scripts: [
             { filename: '/js/form.js' }
         ]
