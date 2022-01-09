@@ -24,6 +24,9 @@
     variables.about = {
         head: res.locals.head.about,
         bootstrap: res.locals.cdn.bootstrap,
+        styles: [
+            { link: '/css/about.css' }
+        ],
         modules: [
             { filename: '/js/modules/test-module.js' }
         ],

@@ -4,6 +4,6 @@
 class Sample {
 
     async testing () {
-        console.log('Hi from module');
+        console.log('Hi from Sample module');
     }
 }

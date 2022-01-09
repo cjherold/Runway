@@ -8,14 +8,14 @@
         <meta name="description" content="{{head.desc}}">
         <meta name="author" content="{{head.author}}">
 
-        {{!-- css files  --}}
-        {{#each styles}}
-            <link type="text/css" href="{{link}}"></link>
-        {{/each}}
-
-
         {{!-- bootstrap css cdn  --}}
         {{{bootstrap.css}}}
+        
+        {{!-- css files  --}}
+        {{#each styles}}
+            <link rel="stylesheet" type="text/css" href="{{link}}"></link>
+        {{/each}}
+
 
         <title>{{head.title}}</title>
     </head>

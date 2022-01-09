@@ -11,6 +11,11 @@
 
         {{!-- bootstrap css cdn  --}}
         {{{bootstrap.css}}}
+
+        {{!-- css files  --}}
+        {{#each styles}}
+            <link rel="stylesheet" type="text/css" href="{{link}}"></link>
+        {{/each}}
         
         <title>{{head.title}}</title>
     </head>
