@@ -24,6 +24,12 @@
     variables.about = {
         head: res.locals.head.about,
         bootstrap: res.locals.cdn.bootstrap,
+        modules: [
+            { filename: '/js/modules/test-module.js' }
+        ],
+        scripts: [
+            { filename: '/js/about.js'}
+        ]
     };
 
     variables.form = {

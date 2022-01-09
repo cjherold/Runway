@@ -1,6 +1,6 @@
 exports.clearFolders = require('./tasks/clearFolders');
 exports.compileScss = require('./tasks/compileScss');
-exports.compileTypescript = require('./tasks/compileTypescript');
+exports.compileJavascript = require('./tasks/compileJavascript');
 exports.finishMessage = require('./tasks/finishMessage');
 exports.reload = require('./tasks/reload');
 exports.processSetup = require('./tasks/processSetup');

@@ -1,1 +1,1 @@
-console.log('home.js loaded');
+console.log("home.js loaded");

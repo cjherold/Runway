@@ -1,12 +1,13 @@
 const { series, parallel } = require('gulp');
 const startMessage = require('./startMessage');
 const clearFolders = require('./clearFolders');
-const compileTypescript = require('./compileTypescript');
+const compileJavascript = require('./compileJavascript');
 const compileScss = require('./compileScss');
 const finishMessage = require('./finishMessage');
 const processSetup = require('./processSetup');
 const startServer = require('./startServer');
 const reload = require('./reload');
+
 
 
 /**
@@ -20,7 +21,7 @@ module.exports = series(
     startMessage,
     clearFolders,
     parallel(
-        compileTypescript,
+        compileJavascript,
         compileScss,
     ),
     processSetup,
