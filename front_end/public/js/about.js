@@ -1,2 +1,1 @@
-const sample = new Sample();
-sample.testing();
+const sample=new Sample;sample.testing();

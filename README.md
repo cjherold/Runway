@@ -1,6 +1,8 @@
 # Runway
 A quick way to get a website up to speed and off the ground.
 
+# Notice: Project is still being finished so this readme is not quite ready...
+
 ## About
 ##### All the main features of this project can be seen by the example pages already here. These pages try to utilize things like routes, middleware, classes, modules, scss, and the env file.
 

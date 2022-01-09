@@ -12,7 +12,7 @@
         head: res.locals.head.home,
         bootstrap: res.locals.cdn.bootstrap,
         styles: [
-            { link: '/css/_partials/nav.css' },
+            { link: '/css/nav.css' },
             { link: '/css/home.css' }
         ],
         modules: [],
@@ -40,12 +40,12 @@
         bootstrap: res.locals.cdn.bootstrap,
         states: res.locals.states,
         styles: [
-            { link: '/css/_partials/nav.css' },
+            { link: '/css/nav.css' },
             { link: '/css/form.css' }
         ],
-        // modules: [
-        //     { filename: '/js/modlues/jquery.js' }
-        // ],
+        modules: [
+            { filename: '/js/modules/jquery.js' }
+        ],
         scripts: [
             { filename: '/js/form.js' }
         ]

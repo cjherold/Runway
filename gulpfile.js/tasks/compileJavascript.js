@@ -11,8 +11,8 @@ function compileJavascript(next) {
     console.log('Compiling Javacript...\n');
 
     src('./front_end/src/js/**')
-        .pipe(uglify())
         .pipe(babel())
+        .pipe(uglify())
         .pipe(dest('./front_end/public/js'))
     
     

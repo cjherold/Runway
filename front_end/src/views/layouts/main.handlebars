@@ -28,6 +28,9 @@
 
         {{> footer}}
 
+        {{!-- bootstrap js cdn  --}}
+        {{{bootstrap.js}}}
+        
         {{!-- javascript modules  --}}
         {{#each modules}}
             <script src="{{filename}}"></script>
@@ -35,11 +38,9 @@
 
         {{!-- javascript files  --}}
         {{#each scripts}}
-            <script src="{{filename}}"></script>
+            <script defer src="{{filename}}"></script>
         {{/each}}
 
-        {{!-- bootstrap js cdn  --}}
-        {{{bootstrap.js}}}
 
     </body>
 </html>

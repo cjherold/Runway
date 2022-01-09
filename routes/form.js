@@ -27,6 +27,7 @@ router.route('/')
             res.json({
                 success: true,
                 message: 'Form sent successfully',
+                data: formSubmitted,
             });
         } catch (err) {
             Errors.saveError(err, next);
