@@ -1,5 +1,6 @@
 front_end/public/css/*
-front_end/public/js/*
+front_end/public/js/modules/*.js
+front_end/public/js/*.js
 logs/*
 _notes
 
