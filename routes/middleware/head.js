@@ -7,6 +7,7 @@ function head (req, res, next) {
         charset: 'UTF-8',
         title: 'Home',
         meta: 'metatag',
+        icon: './img/icons/placeholder-icon.png',
         author: 'Somebody McPerson',
         keywords: 'homepage, test',
         desc: 'This is a homepage'
@@ -16,6 +17,7 @@ function head (req, res, next) {
         charset: 'UTF-8',
         title: 'About',
         meta: 'metatag',
+        icon: './img/icons/placeholder-icon.png',
         author: 'Somebody McPerson',
         keywords: 'about, test',
         desc: 'This is an about page'
@@ -25,6 +27,7 @@ function head (req, res, next) {
         charset: 'UTF-8',
         title: 'Sample Form',
         meta: 'metatag',
+        icon: './img/icons/placeholder-icon.png',
         author: 'Somebody McPerson',
         keywords: 'form, test',
         desc: 'This is a form page'
