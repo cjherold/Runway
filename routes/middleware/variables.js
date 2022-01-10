@@ -44,7 +44,7 @@
             { link: '/css/form.css' }
         ],
         modules: [
-            { filename: '/js/modules/jquery.js' }
+            { filename: '/js/min/jquery.js' }
         ],
         scripts: [
             { filename: '/js/form.js' }
