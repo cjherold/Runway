@@ -15,6 +15,16 @@ A quick way to get a website up to speed and off the ground.
 
 ## About
 ##### Some of the main features of this project can be seen by the example pages already here. These pages try to utilize things like routes, middleware, classes, modules, scss, and the env file.
+```bash
+# install node_modules
+npm i
+
+# basic start
+npm start
+
+# development start
+npm run dev
+```
 
 
 
