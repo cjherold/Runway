@@ -26,6 +26,27 @@ npm start
 npm run dev
 ```
 
+# Files to add
+* .gitignore has a few things that are going to be left out, but are highly recommended
+* .env with a PORT
+* _notes folder is recommended as a handy place to store temp files and notes.
+* Here is a sample of how ./ will look
+```txt
+_notes/
+front_end/
+gulpfile.js/
+logs/
+node_modules/
+routes/
+.env
+.gitignore
+app.js
+app.routes.js
+package-lock.json
+package.json
+README.md
+```
+
 
 
 
