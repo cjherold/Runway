@@ -7,3 +7,4 @@ class Sample {
         console.log('Hi from Sample module');
     }
 }
+

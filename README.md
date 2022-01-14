@@ -16,6 +16,11 @@ A quick way to get a website up to speed and off the ground.
 ## About
 ##### Some of the main features of this project can be seen by the example pages already here. These pages try to utilize things like routes, middleware, classes, modules, scss, and the env file.
 ```bash
+
+# make sure that .env is in the .gitignore file (this one is an example for reference only)
+# remove .git and run
+git init
+
 # install node_modules
 npm i
 

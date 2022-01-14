@@ -4,8 +4,7 @@ front_end/public/js/*.js
 logs/*
 _notes
 
-
-.env
+# .env normally this is ignored, just using it as an example
 node_modules
 .vscode
 .vscode-test

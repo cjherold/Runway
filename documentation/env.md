@@ -1,6 +1,6 @@
 
 # .env
-#### The .env file can hold private information that can be passed into the app while it is running. In the ./ directory add a file named .env and below is a sample of how it looks.
+#### The .env file can hold private information that can be passed into the app while it is running. Make sure that .env is in the .gitignore, it is only in this project as an example.
 
 ```env
 PORT=3000
