@@ -4,13 +4,13 @@ const router = require('express').Router();
 /** -------------------------------------------------------------------
  *  Locations
  */
-// Middleware 
+// Middleware
 const cdn = require('./routes/middleware/cdn');
 const head = require('./routes/middleware/head');
 const states = require('./routes/middleware/states');
 const logger = require('./routes/middleware/logger');
 const variables = require('./routes/middleware/variables');
-// Routes 
+// Routes
 const home = require('./routes/home');
 const about = require('./routes/about');
 const form = require('./routes/form');
@@ -19,7 +19,7 @@ const form = require('./routes/form');
 /** -------------------------------------------------------------------
  * Endpoints
  */
-// Middleware 
+// Middleware
 router.use('*', head);
 router.use('*', cdn);
 router.use('*', logger);

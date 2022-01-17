@@ -1,5 +1,5 @@
 const { src, dest } = require('gulp');
-const uglify = require('gulp-uglify'); 
+const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 
 /**
@@ -13,9 +13,9 @@ function compileJavascript(next) {
     src('./front_end/src/js/**')
         .pipe(babel())
         .pipe(uglify())
-        .pipe(dest('./front_end/public/js'))
-    
-    
+        .pipe(dest('./front_end/public/js'));
+
+
     next();
 }
 

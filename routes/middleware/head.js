@@ -1,6 +1,6 @@
 
 
-function head (req, res, next) {
+function head(req, res, next) {
     const head = {};
 
     head.home = {
@@ -31,10 +31,10 @@ function head (req, res, next) {
         author: 'Somebody McPerson',
         keywords: 'form, test',
         desc: 'This is a form page'
-    }
+    };
 
     res.locals.head = head;
-    
+
     next();
 
 }

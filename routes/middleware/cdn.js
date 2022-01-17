@@ -3,7 +3,7 @@
  */
 
 
-function cdn (req, res, next) {
+function cdn(req, res, next) {
     const cdn = {};
 
     cdn.bootstrap = {
@@ -24,7 +24,7 @@ function cdn (req, res, next) {
     };
 
     res.locals.cdn = cdn;
-    
+
     next();
 }
 

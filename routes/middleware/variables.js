@@ -5,7 +5,7 @@
  *  If res.locals is not working, check the order that this is used in app.routes.js and make it last.
  */
 
- function variables (req, res, next) {
+function variables(req, res, next) {
     const variables = {};
 
     variables.home = {
@@ -13,26 +13,26 @@
         bootstrap: res.locals.cdn.bootstrap,
         styles: [
             { link: '/css/nav.css' },
-            { link: '/css/home.css' }
+            { link: '/css/home.css' },
         ],
         modules: [],
         scripts: [
-            { filename: '/js/home.js' }
-        ]
+            { filename: '/js/home.js' },
+        ],
     };
 
     variables.about = {
         head: res.locals.head.about,
         bootstrap: res.locals.cdn.bootstrap,
         styles: [
-            { link: '/css/about.css' }
+            { link: '/css/about.css' },
         ],
         modules: [
-            { filename: '/js/modules/test-module.js' }
+            { filename: '/js/modules/test-module.js' },
         ],
         scripts: [
-            { filename: '/js/about.js'}
-        ]
+            { filename: '/js/about.js' },
+        ],
     };
 
     variables.form = {
@@ -41,14 +41,14 @@
         states: res.locals.states,
         styles: [
             { link: '/css/nav.css' },
-            { link: '/css/form.css' }
+            { link: '/css/form.css' },
         ],
         modules: [
-            { filename: '/js/min/jquery.js' }
+            { filename: '/js/min/jquery.js' },
         ],
         scripts: [
-            { filename: '/js/form.js' }
-        ]
+            { filename: '/js/form.js' },
+        ],
     };
 
     res.locals.variables = variables;

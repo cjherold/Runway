@@ -4,7 +4,7 @@ const livereload = require('gulp-livereload');
 /**
  * Reloads server after changes
  */
-function reload (next) {
+function reload(next) {
     livereload.reload();
     next();
 }

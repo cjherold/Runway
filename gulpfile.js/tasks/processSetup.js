@@ -22,7 +22,7 @@ function processSetup(next) {
 }
 
 // On exit
-process.on('exit', () => {``
+process.on('exit', () => {
     if (node) node.kill();
 });
 

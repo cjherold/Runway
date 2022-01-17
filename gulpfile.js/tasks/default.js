@@ -9,7 +9,6 @@ const startServer = require('./startServer');
 const reload = require('./reload');
 
 
-
 /**
  * npm start
  * clears public folder
