@@ -1,23 +1,4 @@
-body {
-  background-color: #6381bb;
-}
-
-#picker-container {
-  margin-top: 20%;
-}
-
-.container {
-  max-width: 900px;
-}
-
-.div-item {
-  position: relative;
-  height: 80px;
-}
-.div-item input {
-  position: absolute;
-  margin-top: auto;
-  bottom: 8px;
-  left: 0;
-  padding: 3px;
+.blue-text {
+  color: #505091;
+  background-color: #fff;
 }

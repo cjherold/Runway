@@ -1,26 +1,6 @@
 @import './modules/variables.scss';
 
-body {
-    background-color: #6381bb;
-}
-
-#picker-container {
-    // background-color: #fff;
-    margin-top: 20%;
-}
-
-.container {
-    max-width: 900px;
-}
-
-.div-item {
-    position: relative;
-    height: 80px;
-    input {
-        position: absolute;
-        margin-top: auto;
-        bottom: 8px;
-        left: 0;
-        padding: 3px;
-    }
+.blue-text {
+    color: $blue-background;
+    background-color: #fff;
 }

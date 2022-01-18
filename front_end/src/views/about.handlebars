@@ -1,0 +1,53 @@
+{{!-- This page is rendered without using the main template. --}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="{{head.charset}}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="description" content="{{head.desc}}">
+        <meta name="author" content="{{head.author}}">
+        <link rel="icon" type="image/png" href="{{head.icon}}">
+
+        {{!-- bootstrap css cdn  --}}
+        {{{bootstrap.css}}}
+
+        {{!-- css files  --}}
+        {{#each styles}}
+            <link rel="stylesheet" type="text/css" href="{{link}}"></link>
+        {{/each}}
+        
+        <title>{{head.title}}</title>
+    </head>
+    <body>
+
+        {{> nav}}
+        
+        <div class="container my-4 bg-light shadow">
+            <div class="row p-3">
+                <div class="col-8 offset-2 text-center">
+                    <h1>About Page!</h1>
+                </div>
+
+            </div>
+        </div>
+
+        {{> footer}}
+
+
+        {{!-- bootstrap js cdn  --}}
+        {{{bootstrap.js}}}
+
+        {{!-- javascript modules  --}}
+        {{#each modules}}
+            <script src="{{filename}}"></script>
+        {{/each}}
+        
+        {{!-- javascript files  --}}
+        {{#each scripts}}
+            <script src="{{filename}}"></script>
+        {{/each}}
+
+    </body>
+</html>
