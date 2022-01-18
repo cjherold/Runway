@@ -4,7 +4,7 @@
   "description": "A quick way to get a website up to speed and off the ground.",
   "main": "app.js",
   "scripts": {
-    "start": "gulp --silent &> ./logs/output.txt",
+    "start": "gulp --silent",
     "dev": "gulp --silent'",
     "build": "echo 'no current script for build'",
     "test": "gulp --tasks"
