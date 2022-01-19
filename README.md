@@ -8,13 +8,13 @@ A quick way to get a website up to speed and off the ground.
 
 ***
 ## Documentation
-* [Front End](./documentation/frontend)
-* [Routes](./documentation/routes)
-* [Express Routing](./documentation/expressrouting)
-* [Express](./documentation/express)
-* [Gulp](./documentation/gulp)
-* [Env](./documentation/env)
-* [Eslint](./documentation/eslint)
+* [Front End](https://github.com/cjherold/Runway/blob/main/documentation/frontend)
+* [Routes](https://github.com/cjherold/Runway/blob/main/documentation/routes)
+* [Express Routing](https://github.com/cjherold/Runway/blob/main/documentation/expressrouting)
+* [Express](https://github.com/cjherold/Runway/blob/main/documentation/express)
+* [Gulp](https://github.com/cjherold/Runway/blob/main/documentation/gulp)
+* [Env](https://github.com/cjherold/Runway/blob/main/documentation/env)
+* [Eslint](https://github.com/cjherold/Runway/blob/main/documentation/eslint)
 
 ***
 
