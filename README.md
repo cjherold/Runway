@@ -3,18 +3,32 @@ A quick way to get a website up to speed and off the ground.
 
 # Notice: Project is still being finished so this readme is not quite ready...
 
-* [Routes](#routes)
-    * [Classes](#classes)
-    * [Middleware](#middleware)
-* [Front End](#front-end)
-    * [Views](#views)
-    * [Src](#src)
-* [Gulp](#gulp)
-* [Logs](#logs)
-* [Examples](#examples)
-
 ## About
 ##### Some of the main features of this project can be seen by the example pages already here. These pages try to utilize things like routes, middleware, classes, modules, scss, and the env file.
+
+***
+## Documentation
+* [Front End](./documentation/frontend)
+* [Routes](./documentation/routes)
+* [Express Routing](./documentation/expressrouting)
+* [Express](./documentation/express)
+* [Gulp](./documentation/gulp)
+* [Env](./documentation/env)
+* [Eslint](./documentation/eslint)
+
+***
+
+
+## Setup
+##### Here is how you get up and running. [More](./documentation/setup.md)
+
+
+
+## Gulp
+##### This project uses gulp as a task manager
+
+
+
 ```bash
 
 # make sure that .env is in the .gitignore file (this one is an example for reference only)
@@ -36,6 +50,8 @@ npm run dev
 * .env with a PORT
 * _notes folder is recommended as a handy place to store temp files and notes.
 * Here is a sample of how ./ will look
+
+## Example file structure
 ```txt
 _notes/
 front_end/
