@@ -8,7 +8,6 @@ const processSetup = require('./processSetup');
 const startServer = require('./startServer');
 const reload = require('./reload');
 
-
 /**
  * npm start
  * clears public folder
@@ -16,16 +15,16 @@ const reload = require('./reload');
  * starts server
  * reloads and recompiles on change
  */
+// prettier-ignore
 module.exports = series(
     startMessage,
     clearFolders,
     parallel(
         compileJavascript,
-        compileScss,
+        compileScss
     ),
     processSetup,
     startServer,
     reload,
-    finishMessage,
+    finishMessage
 );
-

@@ -2,9 +2,8 @@
  *  For miscellaneous things that might not need an entire class dedicated to them
  */
 
-
 class Misc {
-
+    // prettier-ignore
     static async submitTestForm(params = {}) {
         const formdata = params.formdata || null;
 
@@ -21,8 +20,6 @@ class Misc {
 
         return formdata;
     }
-
 }
-
 
 module.exports = Misc;

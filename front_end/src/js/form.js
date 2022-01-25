@@ -1,9 +1,4 @@
-
-
-const formdata = {
-    name: 'Chris'
-};
-
+// prettier-ignore
 $('#sample-form')
     .on('submit', function () {
         const formdata = $(this).serializeArray().reduce((obj, member) => {
@@ -25,7 +20,7 @@ $('#sample-form')
             error: function () {
                 console.error('Error: failed to submit form');
                 alert('Error');
-            }
+            },
         });
         return false;
     });

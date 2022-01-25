@@ -1,8 +1,6 @@
 const { fork } = require('child_process');
-const path = require('path');
 
 let alreadyRunning;
-
 
 /**
  *  Prepare the process

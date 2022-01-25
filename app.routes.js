@@ -1,4 +1,3 @@
-
 const router = require('express').Router();
 
 /** -------------------------------------------------------------------
@@ -14,7 +13,6 @@ const variables = require('./routes/middleware/variables');
 const home = require('./routes/home');
 const about = require('./routes/about');
 const form = require('./routes/form');
-
 
 /** -------------------------------------------------------------------
  * Endpoints

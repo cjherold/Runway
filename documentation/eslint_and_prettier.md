@@ -24,6 +24,32 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
 ### Examples
 ##### There are already .yml versions included in this project but here are some JSON alternatives.
 
+###### Ignore annoying things you don't want prettier to autoformat.
+```js
+router.route('/').get(async (req, res, next) => {
+    try {
+        res.render('home', {
+            layout: 'main',
+        });
+    } catch (err) {
+        next(err);
+    }
+});
+
+// Using an ignore
+
+// prettier-ignore
+router.route('/')
+    .get(async (req, res, next) => {
+        try {
+            res.render('home', {
+                layout: 'main',
+            });
+        } catch (err) {
+            next(err);
+        }
+    });
+```
 
 ###### If you prefer JSON here is a basic .eslintrc.json example.
 ```json
@@ -38,12 +64,12 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
 ###### If you prefer JSON here is a basic .prettierrc.json example.
 ```json
 {
-	"semi": true,
-	"singleQuote": true,
-	"tabWidth": 4,
-	"trailingComma": "es5",
-	"parser": "babel",
-	"editor.formatOnSave": true,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "parser": "babel",
+    "editor.formatOnSave": true,
     "prettier.useTabs": true
 }
 ```

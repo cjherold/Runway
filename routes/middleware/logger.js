@@ -6,7 +6,9 @@
 function logger(req, res, next) {
     const now = new Date();
     const route = req.baseUrl === '' ? '/home' : req.baseUrl;
-    console.log(`------------------------------------\n${route} ${now}\n------------------------------------`);
+    console.log(
+        `------------------------------------\n${route} ${now}\n------------------------------------`
+    );
 
     next();
 }

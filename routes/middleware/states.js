@@ -5,14 +5,12 @@
 function states(req, res, next) {
     const states = {
         MN: 'Minnesota',
-        FL: 'Florida'
-
+        FL: 'Florida',
     };
 
     res.locals.states = states;
 
     next();
-
 }
 
 module.exports = states;

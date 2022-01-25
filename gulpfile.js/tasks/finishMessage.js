@@ -1,4 +1,3 @@
-
 /**
  * Custom message when gulp tasks are finished
  */

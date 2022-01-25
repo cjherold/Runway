@@ -3,7 +3,6 @@ const { engine } = require('express-handlebars');
 const router = require('./app.routes');
 require('dotenv').config({ path: './.env' });
 
-
 const app = express();
 const PORT = process.env.PORT || 8080;
 app.use(express.static('./front_end/public'));

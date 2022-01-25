@@ -1,9 +1,8 @@
-
-const router = require('express').Router()
+const router = require('express').Router();
 const { Errors } = require('./classes');
 const { Misc } = require('./classes');
 
-
+// prettier-ignore
 router.route('/')
     .get(async (req, res, next) => {
         try {
@@ -23,7 +22,7 @@ router.route('/')
     .post(async (req, res, next) => {
         try {
             const formSubmitted = await Misc.submitTestForm({ formdata: req.body.formdata });
-            
+
             res.json({
                 success: true,
                 message: 'Form sent successfully',

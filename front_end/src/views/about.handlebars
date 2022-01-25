@@ -17,13 +17,13 @@
         {{#each styles}}
             <link rel="stylesheet" type="text/css" href="{{link}}"></link>
         {{/each}}
-        
+
         <title>{{head.title}}</title>
     </head>
     <body>
 
         {{> nav}}
-        
+
         <div class="container my-4 bg-light shadow">
             <div class="row p-3">
                 <div class="col-8 offset-2 text-center">
@@ -43,7 +43,7 @@
         {{#each modules}}
             <script src="{{filename}}"></script>
         {{/each}}
-        
+
         {{!-- javascript files  --}}
         {{#each scripts}}
             <script src="{{filename}}"></script>

@@ -2,7 +2,6 @@
  *  An easy way to keep a list of cdn's and pull them in to the pages that use them
  */
 
-
 function cdn(req, res, next) {
     const cdn = {};
 
@@ -16,11 +15,11 @@ function cdn(req, res, next) {
         js: `
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         `,
-        desc: 'css and js for bootstrap cdn'
+        desc: 'css and js for bootstrap cdn',
     };
 
     cdn.scrollreveal = {
-        js: '<script src="https://unpkg.com/scrollreveal"></script>'
+        js: '<script src="https://unpkg.com/scrollreveal"></script>',
     };
 
     res.locals.cdn = cdn;

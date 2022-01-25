@@ -7,12 +7,10 @@ exports.processSetup = require('./tasks/processSetup');
 exports.startServer = require('./tasks/startServer');
 exports.startMessage = require('./tasks/startMessage');
 
-
 /**
  * For npm start
  */
 exports.default = require('./tasks/default');
-
 
 /**
  * For npm run build

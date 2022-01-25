@@ -1,10 +1,5 @@
-
-
-
 class Sample {
-
-    async testing () {
+    async testing() {
         console.log('Hi from Sample module');
     }
 }
-

@@ -15,7 +15,6 @@ function compileJavascript(next) {
         .pipe(uglify())
         .pipe(dest('./front_end/public/js'));
 
-
     next();
 }
 

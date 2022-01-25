@@ -5,6 +5,7 @@
  *  If res.locals is not working, check the order that this is used in app.routes.js and make it last.
  */
 
+// prettier-ignore
 function variables(req, res, next) {
     const variables = {};
 
@@ -12,7 +13,7 @@ function variables(req, res, next) {
         head: res.locals.head.home,
         bootstrap: res.locals.cdn.bootstrap,
         styles: [
-            { link: '/css/nav.css' },
+            { link: '/css/nav.css' }, // adding a comment here allows these multi line arrays without formatter conflict
             { link: '/css/home.css' },
         ],
         modules: [],

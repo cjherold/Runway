@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const FRONT_END = './front_end';
 
-
 /**
  * Convert SCSS to CSS then autoprefix them
  *       from    /src/scss/*

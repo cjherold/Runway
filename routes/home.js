@@ -1,6 +1,7 @@
-const router = require('express').Router()
+const router = require('express').Router();
 const { Errors } = require('./classes');
 
+// prettier-ignore
 router.route('/')
     .get(async (req, res, next) => {
         try {
@@ -11,11 +12,10 @@ router.route('/')
                 layout: 'main',
                 ...variables,
             });
-
         } catch (err) {
             Errors.logError(err, next);
             next();
         }
-    })
+    });
 
 module.exports = router;

@@ -1,7 +1,6 @@
 const del = require('del');
 const FRONT_END = './front_end';
 
-
 /**
  * Clear public folders
  *      -public/js/*

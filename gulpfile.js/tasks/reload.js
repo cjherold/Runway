@@ -1,6 +1,5 @@
 const livereload = require('gulp-livereload');
 
-
 /**
  * Reloads server after changes
  */

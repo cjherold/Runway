@@ -1,5 +1,3 @@
-
-
 function head(req, res, next) {
     const head = {};
 
@@ -10,7 +8,7 @@ function head(req, res, next) {
         icon: './img/icons/placeholder-icon.png',
         author: 'Somebody McPerson',
         keywords: 'homepage, test',
-        desc: 'This is a homepage'
+        desc: 'This is a homepage',
     };
 
     head.about = {
@@ -20,7 +18,7 @@ function head(req, res, next) {
         icon: './img/icons/placeholder-icon.png',
         author: 'Somebody McPerson',
         keywords: 'about, test',
-        desc: 'This is an about page'
+        desc: 'This is an about page',
     };
 
     head.form = {
@@ -30,13 +28,12 @@ function head(req, res, next) {
         icon: './img/icons/placeholder-icon.png',
         author: 'Somebody McPerson',
         keywords: 'form, test',
-        desc: 'This is a form page'
+        desc: 'This is a form page',
     };
 
     res.locals.head = head;
 
     next();
-
 }
 
 module.exports = head;
