@@ -16,7 +16,7 @@ router.route('/')
             });
 
         } catch (err) {
-            Errors.saveError(err, next);
+            Errors.logError(err, next);
             next();
         }
     })
@@ -30,7 +30,7 @@ router.route('/')
                 data: formSubmitted,
             });
         } catch (err) {
-            Errors.saveError(err, next);
+            Errors.logError(err, next);
             next();
         }
     });

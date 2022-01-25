@@ -15,7 +15,7 @@ router.route('/')
             });
 
         } catch (err) {
-            Errors.saveError(err, next);
+            Errors.logError(err, next);
             next();
         }
     })

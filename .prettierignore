@@ -1,0 +1,5 @@
+node_modules
+package.json
+package-lock.json
+.env
+front_end/public/**

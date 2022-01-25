@@ -1,29 +1,22 @@
 const { fork } = require('child_process');
 const path = require('path');
 
-let node;
+let alreadyRunning;
 
 
 /**
- * Preparing the server before starting it
+ *  Prepare the process
  */
 function processSetup(next) {
-    if (node) node.kill();
-    node = fork(path.join(__dirname, '../../', 'app.js'), {
-        env: Object.assign({}, process.env, {
-            TASKRUNNER: 'gulp',
-            PORT: 3000,
-        }),
-        cwd: '.',
-        stdio: 'inherit',
-    });
+    if (alreadyRunning) alreadyRunning.kill();
+    alreadyRunning = fork('app.js');
 
     next();
 }
 
 // On exit
 process.on('exit', () => {
-    if (node) node.kill();
+    if (alreadyRunning) alreadyRunning.kill();
 });
 
 module.exports = processSetup;

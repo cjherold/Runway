@@ -1,140 +1,142 @@
-# Use eslint extension for vscode
-# If this is not working you might need an install
-# The link below has more info
-# https://github.com/airbnb/javascript/issues/2202 
-extends: airbnb-base
+# Setup info for Eslint & Prettier can be found in documentation
+# Some interesting info: https://airbnb.io/javascript/
+
+extends:
+    - airbnb-base
+    - prettier
 
 plugins:
-  - import
+    - import
+    - prettier
 
 env:
-  es2021: true
-  browser: true
-  commonjs: true
-  node: true
-  jquery: true
-
+    es2021: true
+    browser: true
+    commonjs: true
+    node: true
+    jquery: true
 
 parserOptions:
-  ecmaVersion: 8
-  sourceType: module
-
+    ecmaVersion: 8
+    sourceType: module
 
 # individual eslint rules can be enables/disabled
 rules:
-  no-unused-vars: 0
-  class-methods-use-this: 0
-  import/newline-after-import: 0
+    no-unused-vars:
+        - warn
 
-  arrow-body-style:
-    - error
-    - as-needed
+    class-methods-use-this: 0
 
-  arrow-parens:
-    - warn
-    - as-needed
+    import/newline-after-import: 0
 
-  camelcase:
-    - warn
-    - properties: always
-      ignoreDestructuring: false
-      ignoreImports: false
+    prettier/prettier:
+        - warn
 
-  comma-dangle:
-    - warn
-    - arrays: always-multiline
-      objects: always-multiline
-      imports: never
-      exports: never
-      functions: ignore
+    arrow-body-style:
+        - error
+        - as-needed
 
-  consistent-return: 0
+    arrow-parens:
+        - warn
+        - as-needed
 
-  func-names: 0
+    camelcase:
+        - warn
+        - properties: always
+          ignoreDestructuring: false
+          ignoreImports: false
 
-  function-paren-newline: 0
+    comma-dangle:
+        - warn
+        - arrays: always-multiline
+          objects: always-multiline
+          imports: never
+          exports: never
+          functions: ignore
 
-  global-require: 0
+    consistent-return: 0
 
-  guard-for-in: 0
+    func-names: 0
 
-  implicit-arrow-linebreak: 0
+    function-paren-newline: 0
 
-  import/no-extraneous-dependencies: 0
+    global-require: 0
 
-  indent:
-    - error
-    - 4
-    - SwitchCase: 1
+    guard-for-in: 0
 
-  linebreak-style: 0
+    implicit-arrow-linebreak: 0
 
-  max-len: 0
+    import/no-extraneous-dependencies: 0
 
-  no-bitwise: 0
+    indent:
+        - error
+        - 4
+        - SwitchCase: 1
 
-  no-console: 0
+    linebreak-style: 0
 
-  no-continue: 0
+    max-len: 0
 
-  no-extra-boolean-cast: 0
+    no-bitwise: 0
 
-  no-labels: 0
+    no-console: 0
 
-  no-mixed-operators: 0
+    no-continue: 0
 
-  no-multiple-empty-lines:
-    - warn
-    - max: 2
-      maxEOF: 1
+    no-extra-boolean-cast: 0
 
-  no-param-reassign: 0
+    no-labels: 0
 
-  no-plusplus: 0
+    no-mixed-operators: 0
 
-  no-prototype-builtins: 0
+    no-multiple-empty-lines:
+        - warn
+        - max: 2
+          maxEOF: 1
 
-  no-restricted-globals: 0
+    no-param-reassign: 0
 
-  no-restricted-properties: 0
+    no-plusplus: 0
 
-  no-restricted-syntax: 0
+    no-prototype-builtins: 0
 
-  no-shadow: 0
+    no-restricted-globals: 0
 
-  no-underscore-dangle: 0
+    no-restricted-properties: 0
 
-  no-undef: 0
-  
-  no-unused-vars:
-    - error
-    - args: none
+    no-restricted-syntax: 0
 
-  no-use-before-define: 0
+    no-shadow: 0
 
-  no-useless-escape: 0
+    no-underscore-dangle: 0
 
-  object-shorthand: 0
+    no-undef: 0
 
-  padded-blocks:
-    - error
-    - switches: never
+    no-use-before-define: 0
 
-  prefer-arrow-callback: 0
+    no-useless-escape: 0
 
-  prefer-const:
-    - warn
+    object-shorthand: 0
 
-  prefer-destructuring: 0
+    padded-blocks:
+        - error
+        - switches: never
 
-  prefer-object-spread: 0
+    prefer-arrow-callback: 0
 
-  prefer-template: 0
+    prefer-const:
+        - warn
 
-  radix:
-    - error
-    - as-needed
+    prefer-destructuring: 0
 
-  strict:
-    - 0
-    - global
+    prefer-object-spread: 0
+
+    prefer-template: 0
+
+    radix:
+        - error
+        - as-needed
+
+    strict:
+        - 0
+        - global
