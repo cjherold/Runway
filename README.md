@@ -4,7 +4,7 @@
 # Notice: Project is still being finished so this readme is not quite ready...
 
 ### About
-##### Some of the main features of this project can be seen by the example pages already here. These pages try to utilize things like routes, middleware, classes, modules, scss, and the env file.
+###### Some of the main features of this project can be seen by the example pages already here. These pages try to utilize things like routes, middleware, classes, modules, scss, and the env file.
 
 ***
 ### Documentation
@@ -20,12 +20,12 @@
 
 
 ### Setup
-##### Here is how you get up and running. [More](./documentation/setup.md)
+###### Here is how you get up and running. [More](./documentation/setup.md)
 
 
 ***
 ### Startup
-##### This project uses gulp as a task manager
+###### This project uses gulp as a task manager
 
 
 

@@ -7,7 +7,7 @@
 * Download extensions: Eslint by Microsoft and Prettier.
 * Add/configure a .eslintrc.yml and .prettierrc.yml file.
 
-###### Install
+###### Install Commands
 ```bash
 npm install -D eslint prettier
 
@@ -22,7 +22,6 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
 
 
 ### Examples
-##### There are already .yml versions included in this project but here are some JSON alternatives.
 
 ###### Ignore annoying things you don't want prettier to autoformat.
 ```js
