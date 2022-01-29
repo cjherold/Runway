@@ -15,6 +15,7 @@
 * [Gulp](./documentation/gulp.md)
 * [Env](./documentation/env.md)
 * [Eslint & Prettier](./documentation/eslint_and_prettier.md)
+* [Vscode Settings](./documentation/vscode.md)
 
 ***
 
