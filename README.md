@@ -14,7 +14,7 @@
 * [Express](./documentation/express.md)
 * [Gulp](./documentation/gulp.md)
 * [Env](./documentation/env.md)
-* [Eslint & Prettier](./documentation/eslint_and_prettier.md)
+* [Eslint](./documentation/eslint.md)
 * [Vscode Settings](./documentation/vscode.md)
 
 ***
